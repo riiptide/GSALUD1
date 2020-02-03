@@ -9,7 +9,6 @@ ul.hello {
 /* Style the list items */
 ul li.hi {
 
-    position: auto;
     padding: 12px 8px 12px 40px;
     background: #eee;
     font-size: 21px;
@@ -96,5 +95,32 @@ ul li.hi.checked::before {
     padding-left:200px;
     padding-right: 200px;
     padding-top: 30px;
-    font: 18px Verdana, sans-serif;
+    font-family: "Times New Roman", Times, serif;
+}
+
+p.a {
+    font-family: "Times New Roman", Times, serif;
+}
+
+@import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css");
+
+div.ip {
+    padding: 12px 8px 12px 40px;
+    font-size: 21px;
+    color: black;
+    transition: 0.2s;
+    border-radius: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: "Verdana", Times, serif;
+}
+
+.instructions {
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 0 0 30px black;
+    padding: 0 15px 0 15px;
 }
