@@ -51,6 +51,9 @@ body {
   font-weight: normal;
   color: #777777; }
 
+.mycolor{
+  background: #12B4CD;;
+}
 h1,
 h2,
 h3,
@@ -2740,6 +2743,14 @@ h6 {
     font-family: "Roboto", sans-serif; }
   .tp_widgets .list li:last-child {
     margin-bottom: 0px; }
+
+.icon, .icon2, .icon3, .icon4, .icon5, .icon6 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  margin-top: -3px;
+}
 
 .footer_title {
   font-size: 18px;

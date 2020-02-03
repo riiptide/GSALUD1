@@ -1,4 +1,4 @@
-ul.hello {
+.hello {
     margin: 0px;
     padding-left: 50px;
     padding-right:50px;
@@ -7,7 +7,7 @@ ul.hello {
 }
 
 /* Style the list items */
-ul li.hi {
+.hi {
 
     padding: 12px 8px 12px 40px;
     background: #eee;
@@ -29,17 +29,17 @@ ul li.hi {
 }
 
 /* Set odd list items to a different color */
-ul li:nth-child(odd).me {
+:nth-child(odd).me {
     background: #ABABAB;
 }
 
 /* Darker background-color on hover */
-ul li.hi:hover {
+.hi:hover {
     background: #CFCFCF;
 }
 
 /* When clicked on, add a background color and strike out text */
-ul li.hi.checked {
+.hi.checked {
     background: #5B8257;
     color: #fff;
 
@@ -47,7 +47,7 @@ ul li.hi.checked {
 
 
 /* Add a "checked" mark when clicked on */
-ul li.hi.checked::before {
+.hi.checked::before {
     content: '';
     position: absolute;
     border-color: #fff;
