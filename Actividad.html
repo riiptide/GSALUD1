@@ -474,9 +474,14 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <br>
-                    <button  class = "policyButton" type='button'
-                             onClick="document.location.reload(true)">¡Crear Mi Plan!</button>
+                    <button class="policyButton" type='button'
+                            onClick=calculateResults()>¡Crear Mi Plan!
+                    </button>
 
+                </div>
+
+                <div id="results">
+                    baglahjfdghdflasjkxlaghraoi
                 </div>
             </div>
         </div>
@@ -601,6 +606,57 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
         }, false);
 
+        function calculateResults() {
+            var enfermedadesCount = document.querySelectorAll(".Enfermedades.checked").length;
+            var mujerCount = document.querySelectorAll(".Mujer.checked").length;
+            var nutriciónCount = document.querySelectorAll(".Nutrición.checked").length;
+            var aguaCount = document.querySelectorAll(".Agua.checked").length;
+            var administraciónCount = document.querySelectorAll(".Administración.checked").length;
+
+
+            // TODO compute max
+            maxChoice = "Agua";
+            max = -1;
+            if (enfermedadesCount > max) {
+                max = enfermedadesCount;
+                maxChoice = "Enfermedades"
+            }
+
+            if (mujerCount > max) {
+                max = mujerCount;
+                maxChoice = "Mujer"
+            }
+
+            if (nutriciónCount > max) {
+                max = nutriciónCount;
+                maxChoice = "Nutrición"
+            }
+            if (aguaCount > max) {
+                max = aguaCount;
+                maxChoice = "Agua"
+            }
+            if (administraciónCount > max) {
+                max = administraciónCount;
+                maxChoice = "Administración"
+            }
+
+            newUrl = "./ListaDeTodo.html#" + maxChoice;
+
+
+            var enfCount = document.getElementById("results").innerHTML = "newUrl: "
+                + newUrl;
+
+
+            document.location.href = newUrl;
+            // if (history.pushState) {
+            //
+            //     window.history.pushState("object or string", "Page Title", newUrl);
+            // } else {
+            //
+            //     document.location.href = newUrl;
+            //
+            // }
+        }
 
 
     </script>
