@@ -79,7 +79,7 @@ a {
 a.anchor {
   display: block;
   position: relative;
-  top: -75px;
+    top: -400px;
   visibility: hidden;
 }
 
@@ -155,6 +155,41 @@ button:focus {
   .main_title.white p {
     color: #fff;
     opacity: .6; }
+
+.nikita {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #12B4CD;
+
+}
+
+.enf {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #5ce638;
+
+}
+
+.muj {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #DF13F0;
+
+}
+
+.nut {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #ff7d27;
+
+}
+
+.adm {
+    font-size: 43px;
+    text-transform: uppercase;
+    color: #d01d33;
+
+}
 
 /* End Main Title Area css
 ============================================================================================ */
